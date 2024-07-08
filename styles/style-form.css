@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #003366;
+  --secondary-color: #dd7200;
+  --input-color: #e6ebf0;
+  --white-color: #ffff;
+  --placeholder-color: #97a0a9;
+  --blending-color: #e5ebf4;
+  --padding-form: 15px 40px;
+  --padding-button: 1rem 2rem;
+  --font-size-heading: 1.5rem;
+  --font-size-regular: 1rem;
+  --font-size-small: 0.8rem;
+  --general-radius: 0.5rem;
+}
+
+body {
+  font-size: 18px;
+  background-image: url(images-form/image.png);
+  background-color: var(--blending-color);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: poppins, sans-serif;
+}
+
+.login-page {
+  width: 100vw;
+  height: 300px;
+}
+
+.form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto;
+}
+
+form {
+  width: 500px;
+  top: 189px;
+  left: 406px;
+  background-color: var(--white-color);
+  padding: var(--padding-form);
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: var(--font-size-regular);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: var(--general-radius);
+  background: var(--input-color);
+  border: none;
+  height: 40px;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: var(--general-radius);
+  background: var(--input-color);
+  border: none;
+  height: 40px;
+}
+
+::placeholder {
+  color: var(--placeholder-color);
+}
+
+.verification {
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  font-size: var(--font-size-heading);
+}
+
+img {
+  width: 270px;
+  height: 52.33px;
+}
+
+.check-in {
+  margin: 0 0 0 0.5rem;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--font-size-small);
+}
+
+.first {
+  color: var(--secondary-color);
+}
+
+button {
+  height: 45px;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  padding: var(--padding-button);
+  background-color: var(--secondary-color);
+  margin: 1rem 0 2rem 0;
+  color: var(--white-color);
+}
+
+ button:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-10rem);
+}
+
+footer img {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer .copyrights {
+  font-size: var(--font-size-small);
+  transform: translateY(6rem);
+}
