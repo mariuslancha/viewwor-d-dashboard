@@ -1,0 +1,100 @@
+body {
+  font-size: 18px;
+  font-family: poppins, sans-serif;
+}
+
+.login-page {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images-form/image.png);
+  background-color: var(--blending-color);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-page .form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page form.login-form {
+  width: 500px;
+  background-color: var(--white-color);
+  padding: var(--padding-form);
+  border-radius: 10px;
+}
+
+.login-page .login-form .form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-field label {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: var(--font-size-regular);
+}
+
+.verification {
+  margin: 0 0 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-page .login-form h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  font-size: var(--font-size-heading);
+}
+
+.login-form img {
+  width: 270px;
+}
+
+.login-form .check-in {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.login-form a {
+  text-decoration: none;
+  font-size: var(--font-size-small);
+}
+
+.login-form button {
+  width: 100%;
+}
+
+.login-form .first {
+  color: var(--secondary-color);
+}
+
+.login-page footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 1rem 0;
+  width: 100%;
+  background-color: var(--blending-colo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page footer img {
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-page footer .copyrights {
+  font-size: var(--font-size-small);
+}

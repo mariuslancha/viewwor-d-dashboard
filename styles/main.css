@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #003366;
+  --secondary-color: #dd7200;
+  --input-color: #e6ebf0;
+  --white-color: #ffff;
+  --placeholder-color: #97a0a9;
+  --blending-color: #e5ebf4;
+  --padding-form: 2rem;
+  --padding-button: 1rem 2rem;
+  --font-size-heading: 1.5rem;
+  --font-size-regular: 1rem;
+  --font-size-small: 0.8rem;
+  --general-radius: 0.5rem;
+}
+
+/* ---------------------------- button component ---------------------------- */
+.custom-button {
+  height: 45px;
+  width: auto;
+  border-radius: 0.5rem;
+  border: none;
+  padding: var(--padding-button);
+}
+
+.custom-button:hover {
+  cursor: pointer;
+}
+
+.custom-button.primary {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.custom-button.green {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.custom-button.red {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+/* ------------------------------- form styles ------------------------------ */
+.form-field input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: var(--general-radius);
+  background: var(--input-color);
+  border: none;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.form-field input::placeholder {
+  color: var(--placeholder-color);
+}
