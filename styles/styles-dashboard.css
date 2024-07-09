@@ -80,6 +80,10 @@ body {
   cursor: pointer;
 }
 
+.side-box:hover span{
+    color: #ffff;
+}
+
 span {
   font-size: var(--side-menu-font);
   margin: 0 0 0 0.5rem;
