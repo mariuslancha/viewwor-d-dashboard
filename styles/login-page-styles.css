@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(images-form/image.png);
+  background-image: url(/assets/images-form/image.png);
   background-color: var(--blending-color);
   background-blend-mode: multiply;
   background-size: cover;
