@@ -206,6 +206,7 @@
 
   .sidenote-img{
     object-fit: contain;
+    height: 100%;
   }
   
   h5 {
