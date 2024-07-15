@@ -5,24 +5,26 @@
 }
 
 :root {
-  --primary-color: #003366;
+  --text-color: #003366;
   --secondary-color: #dd7200;
+  --form-section-padding: 2rem 3.5rem;
   --hover-secondary-color: #b6772adf;
   --active-secondary-color: #dd7e09df;
   --bg-green-color: #EBFAEB;
   --green-color: #33CC33;
   --bg-red-color: #FFE5E5;
   --red-color: #FF3333;
-  --bg-validated: #D5F6E3;
+  --bg-validated: #96dbb2;
   --color-validated: #27AE60;
-  --font-weight-validated: 500;
+  --validated-radius: 0.2rem;
+  --font-weight-validated: 600;
   --font-weight-btns: 800;
   --input-color: #e6ebf0;
   --white-color: #ffff;
   --placeholder-color: #97a0a9;
   --blending-color: #e5ebf4;
   --padding-form: 2rem;
-  --padding-button: 1rem 2rem;
+  --padding-button: 0.6rem 1rem;
   --font-size-heading: 1.5rem;
   --font-size-regular: 1rem;
   --font-size-small: 0.8rem;
@@ -31,11 +33,13 @@
 
 /* ---------------------------- button component ---------------------------- */
 .custom-button {
-  height: 45px;
-  width: auto;
-  border-radius: 0.5rem;
+  height: 30px;
+  width: 100px;
+  border-radius: var(--validated-radius);
   border: none;
-  padding: var(--padding-button);
+  padding: 10px 20px;
+  background-color: var(--color-validated);
+  font-size: 11px;
 }
 
 .custom-button:hover {
@@ -61,7 +65,7 @@
 .custom-button.green {
   background-color: var(--bg-green-color);
   color: var(--green-color);
-  font-weight: var(--font-weight-btns);
+  font-weight: var(--font-weight-validated);
 }
 
 .custom-button.red {

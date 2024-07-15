@@ -294,3 +294,11 @@ h2 {
 .result-n:hover{
     color: var(--primary-color);
 }
+
+.navblue{
+  background-color: var(--text-color);
+  padding: 0.9rem 1.2rem 0.7rem 1.2rem ;
+  color: var(--primary-color);
+  font-size: var(--larger-font-size);
+  height: 50px;
+}
