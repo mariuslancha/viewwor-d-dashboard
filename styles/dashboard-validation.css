@@ -210,6 +210,10 @@
     border: none;
   }
 
+  input[type="text"]:focus{
+    outline: #daeaf9;
+  }
+
   input[type="file"]{
     color: var(--border-box);
   }
@@ -228,9 +232,20 @@
     margin-bottom: 2rem;
   }
 
-   .second-input::placeholder{
-    transform: translateY(-2rem);
+  textarea::placeholder{
+    font-family: var(--general-font-family);
+    padding: var(--general-padding);
   }
+
+  textarea{
+    border-radius: var(--border-radius-box);
+    border: none;
+  }
+
+  textarea:focus{
+    outline: none;
+  }
+
   
   ::placeholder {
     opacity: 0.7;
@@ -241,7 +256,6 @@
 
   .upload-file{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -265,18 +279,6 @@
     cursor: pointer;
   }
   
-  .about {
-    display: flex;
-    justify-content: space-between;
-    height: 230px;
-    background-color: var(--text-color);
-    color: var(--primary-color);
-    border-radius: var(--border-radius-box);
-    font-size: var(--side-menu-font);
-    font-family: var(--general-font-family);
-    padding: var(--general-padding);
-  }
-  
   .notes {
     padding: 0 0 2rem 0;
     line-height: 1.5rem;
@@ -293,12 +295,6 @@
   h2 {
     margin: 0 0 1rem 0;
     color: var(--username-color);
-  }
-
-  .about-button{
-    display: flex;
-    height: 600px;
-    gap: 0.4rem;
   }
   
   .upload {
@@ -318,157 +314,14 @@
     color: var(--primary-color);
     transition: 0.5s ease;
   }
-  
-  .request {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    padding: var(--side-padding-btn);
-    border-radius: var(--side-border-radius);
-    border: none;
-    height: 40px;
-    font-size: var(--side-menu-font);
-  }
-  
-  .request:hover {
-    cursor: pointer;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    transition: 0.5s ease;
-  }
-  
-  .box-section {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0 0 0;
-    width: 655px;
-    gap: 0.5rem;
-  }
-  
-  .box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1.7rem;
-    text-align: left;
-    width: 25%;
-    height: 160px;
-    background-color: var(--primary-color);
-    padding: var(--general-padding);
-    border: 2px solid var(--border-box);
-    border-radius: var(--border-radius-box);
-  }
-  
-  .box:hover {
-      background-color: var(--border-box);
-      color: var(--primary-color);
-      cursor: pointer;
-  }
-  
-  .box:hover span{
-      color: #ffff;
-  }
-  
-  .result {
-    color: var(--text-color);
-    font-size: var(--side-menu-font);
-  }
-  
-  .result:hover{
-      color: var(--primary-color);
-  }
-  
-  .result-n {
-    font-size: var(--larger-font-size);
-    font-weight: 700;
-    color: var(--secondary-color);
-  }
-  
-  .result-n:hover{
-      color: var(--primary-color);
-  }
 
-  .navblue{
-    background-color: var(--text-color);
-    padding: 1rem 1.2rem 0.7rem 1.2rem;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
 
-  .completion-para{
-    display: block;
-  }
 
-  .column-sec{
-    display: block;
-  }
 
-  .id{
-    font-size: medium;
-  }
-  
-  .documents{
-    color: var(--primary-color);
-  }
 
-  .verified-documents{
-    margin: 1rem 0 0 0;
-  }
 
-  .view-all{
-    display: flex;
-    justify-content: space-between;
-    width: 75vw;
-  }
 
-  .view-all-btn{
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border-radius: var(--border-radius-box);
-    border: none;
-    padding: var(--side-padding-btn);
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    height: 40px;
-  }
 
-  .verified-docs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1rem 1.2rem 0.7rem 1.2rem;
-    font-size: var(--side-menu-font);
-    height: 300px;
-    text-align: left;
-  }
 
-  .firstdoc-row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-  }
-
-  .certification{
-    display: flex;
-    align-items: center;
-  }
-
-  .action{
-    display: flex;
-  }
-
-  .creation-date{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .unvs{
-    display: flex;
-    align-items: center;
-  }
 
   
