@@ -261,6 +261,7 @@
     width: 100%;
     height: 97px;
     border: 2px dashed var(--border-box);
+    background-color: var(--search-color);
   }
   
   .notification {
