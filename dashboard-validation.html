@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/styles-dashboard.css" />
+    <link rel="stylesheet" href="styles/dashboard-validation.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <div class="container">
@@ -21,7 +22,7 @@
           <div class="side-box dashboard">
             <p class="side-img">
               <img
-                src="assets/images-dashboard/dashboard (1).png"
+                src="assets/dashboard-validation/dashboard (2).png"
                 alt=""
                 width="20px"
                 height="20px"
@@ -33,13 +34,25 @@
           <div class="side-box">
             <p class="side-img">
               <img
-                src="assets/images-dashboard/Group (1).png"
+                src="assets/images-dashboard/Vector (1).png"
                 alt=""
                 width="20px"
                 height="20px"
               />
             </p>
             <span>Documents</span>
+          </div>
+          <br />
+          <div class="side-box verif-img">
+            <p class="side-img">
+              <img
+                src="assets/dashboard-validation/Vector (2).png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </p>
+            <span>verification Requests</span>
           </div>
           <br />
           <div class="side-box">
@@ -51,27 +64,9 @@
                 height="20px"
               />
             </p>
-            <span>Submission verification</span>
+            <span>Submission Verification</span>
           </div>
           <br />
-          <div class="side-box">
-            <p class="side-img">
-              <img src="assets/images-dashboard/api.png" alt="" width="20px" height="20px" />
-            </p>
-            <span>API Integration</span>
-          </div>
-          <br />
-          <div class="side-box">
-            <p class="side-img">
-              <img
-                src="assets/images-dashboard/Group (1).png"
-                alt=""
-                width="20px"
-                height="20px"
-              />
-            </p>
-            <span>Users Management</span>
-          </div>
         </div>
         <div class="second">
           <div class="side-box">
@@ -88,7 +83,12 @@
           <br />
           <div class="side-box">
             <p class="side-img">
-              <img src="assets/images-dashboard/Group.png" alt="" width="20px" height="20px" />
+              <img
+                src="assets/images-dashboard/Group.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
             </p>
             <span>Settings</span>
           </div>
@@ -96,18 +96,19 @@
           <div class="side-box log-out">
             <span class="lg-btn">Log Out</span>
             <p class="side-img">
-              <img src="assets/images-dashboard/logout.png" alt="" width="20px" height="20px" />
+              <img
+                src="assets/images-dashboard/logout.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
             </p>
           </div>
         </div>
       </section>
       <section class="two">
         <div class="first-flow">
-          <input
-            type="search"
-            name=""
-            id=""
-            placeholder="search">
+          <input type="search" name="" id="" placeholder="search" />
           <div class="notification">
             <p class="notif-img">
               <img
@@ -117,13 +118,13 @@
                 height="20px"
               /><img
                 class="round"
-                src="assets/images-dashboard/Ellipse 1.png"
+                src="assets/dashboard-validation/Ellipse 1 (1).png"
                 alt=""
                 width="20px"
                 height="20px"
               />
             </p>
-            <span>Ericka Ndih</span>
+            <span>Frank Njie</span>
             <p class="notif-img">
               <img
                 src="assets/images-dashboard/arrow-down.png"
@@ -134,36 +135,31 @@
             </p>
           </div>
         </div>
-        <div class="about">
-            <h5>Welcome Back</h5>
-            <h2>Ericka Ndih</h2>
-          <p class="notes">
-            VeriWorld (UVN) is a web and mobile platform designed to verify bank
-            statements <br> and other important documents. It provides a unique
-            Unique Verification Number <br> (UVN) to validated documents, ensuring
-            authenticity and trustworthiness.
-          </p>
-          <button class="upload" type="submit">Upload Document</button>
-          <button class="request" type="button">Request Verification</button>
-        </div>
+        <h2 class="request-heading">Request Validation</h2>
+        <div class="form-section">
+          <form action="" method="post">
+            <label for="">Document Name</label>
+            <input class="first-input"
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter Document Name"
+            />
 
-        <div class="box-section">
-            <div class="box">
-                <span class="result">Documents Verified</span>
-                <span class="result-n">250</span>
+            <label for="description">Document Description</label>
+            <textarea class="second-input"
+              id="description"
+              placeholder="Enter Document Description"
+            ></textarea>
+
+            <p class="form-id">National ID</p>
+            <div class="upload-file">
+                <img src="assets/dashboard-validation/upload_file.png" alt="">
+                <input type="file" name="" id="" />
             </div>
-            <div class="box">
-                <span class="result">Active Users</span>
-                <span class="result-n">70</span>
-            </div>
-            <div class="box">
-                <span class="result">Active APIs</span>
-                <span class="result-n">475</span>
-            </div>
-            <div class="box">
-                <span class="result">Ongoing Requests</span>
-                <span class="result-n">47K</span>
-            </div>
+
+            <button class="upload">Send Request</button>
+          </form>
         </div>
       </section>
     </div>

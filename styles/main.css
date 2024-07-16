@@ -5,14 +5,26 @@
 }
 
 :root {
-  --primary-color: #003366;
+  --text-color: #003366;
   --secondary-color: #dd7200;
+  --form-section-padding: 2rem 3.5rem;
+  --hover-secondary-color: #b6772adf;
+  --active-secondary-color: #dd7e09df;
+  --bg-green-color: #EBFAEB;
+  --green-color: #33CC33;
+  --bg-red-color: #FFE5E5;
+  --red-color: #FF3333;
+  --bg-validated: #96dbb2;
+  --color-validated: #27AE60;
+  --validated-radius: 0.2rem;
+  --font-weight-validated: 600;
+  --font-weight-btns: 800;
   --input-color: #e6ebf0;
   --white-color: #ffff;
   --placeholder-color: #97a0a9;
   --blending-color: #e5ebf4;
   --padding-form: 2rem;
-  --padding-button: 1rem 2rem;
+  --padding-button: 0.6rem 1rem;
   --font-size-heading: 1.5rem;
   --font-size-regular: 1rem;
   --font-size-small: 0.8rem;
@@ -21,11 +33,13 @@
 
 /* ---------------------------- button component ---------------------------- */
 .custom-button {
-  height: 45px;
-  width: auto;
-  border-radius: 0.5rem;
+  height: 30px;
+  width: 100px;
+  border-radius: var(--validated-radius);
   border: none;
-  padding: var(--padding-button);
+  padding: 10px 20px;
+  background-color: var(--color-validated);
+  font-size: 11px;
 }
 
 .custom-button:hover {
@@ -37,14 +51,33 @@
   color: var(--white-color);
 }
 
+.custom-button.primary:hover{
+  background-color: var(--hover-secondary-color);
+  transition: 0.4s;
+}
+
+.custom-button.primary:active{
+  background-color: var(--active-secondary-color);
+  transition: 0.4s;
+  transform: scale(0.9);
+}
+
 .custom-button.green {
-  background-color: var(--secondary-color);
-  color: var(--white-color);
+  background-color: var(--bg-green-color);
+  color: var(--green-color);
+  font-weight: var(--font-weight-validated);
 }
 
 .custom-button.red {
-  background-color: var(--secondary-color);
-  color: var(--white-color);
+  background-color: var(--bg-red-color);
+  color: var(--red-color);
+  font-weight: var(--font-weight-btns);
+}
+
+.custom-button.validated{
+  background-color: var(--bg-validated);
+  color: var(--color-validated);
+  font-weight: var(--font-weight-validated);
 }
 
 /* ------------------------------- form styles ------------------------------ */
@@ -58,6 +91,15 @@
   margin-bottom: 1rem;
 }
 
+.form-field input:focus{
+  outline: none;
+  border-bottom: 2px solid var(--primary-color);
+  transition: 0.2s;
+  background-color: transparent;
+}
+
 .form-field input::placeholder {
   color: var(--placeholder-color);
 }
+
+/* ----------------------------media queries-------------------------- */
