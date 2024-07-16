@@ -38,6 +38,8 @@ body {
 .one {
   background-color: var(--primary-color);
   width: 30%;
+  height: 100vh;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +63,7 @@ body {
 }
 
 .logo {
-  margin: 0.7rem 0 0.6rem 0;
+  margin: 8rem 0 0 0;
 }
 
 .side-box {
