@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Veriworld</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="login-page">
+        <img
+          src="./assets/images/decorative-image-1.svg"
+          alt="Decorative image 1"
+          class="login-page__image login-page__image--1"
+        />
+        <img
+          src="./assets/images/decorative-image-2.svg"
+          alt="Decorative image 2"
+          class="login-page__image login-page__image--2"
+        />
+        <div class="login-page__form-wrapper">
+          <form class="login-form" aria-labelledby="login-title">
+            <img
+              src="./assets/images/logo/logo.svg"
+              alt="Veriworld logo"
+              class="login-form__logo"
+            />
+            <h1 id="login-title" class="login-form__title">Login</h1>
+
+            <div class="form-field">
+              <label for="email" class="form-field__label">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@email.com"
+                class="form-field__input"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="password" class="form-field__label">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter password"
+                class="form-field__input"
+                required
+              />
+            </div>
+            <div class="form-field__flex">
+              <div class="form-field form-field--inline">
+                <input
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                  class="form-field__checkbox"
+                />
+                <label for="remember" class="form-field__label--inline"
+                  >Remember Me</label
+                >
+              </div>
+
+              <p>
+                Forgot Password?
+                <a href="#" class="login-form__forgot-password">Reset here</a>
+              </p>
+            </div>
+
+            <button
+              type="submit"
+              class="custom-button custom-button--primary custom-button--full"
+            >
+              <span class="custom-button__text">Login</span>
+            </button>
+          </form>
+        </div>
+        <footer class="login-page__footer">
+          <p class="login-page__footer-text">
+            © 2024 Veriworld, All Right Reserved
+          </p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

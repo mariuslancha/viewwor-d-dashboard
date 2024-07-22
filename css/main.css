@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* -------------------------------- variables ------------------------------- */
+:root {
+  --white: #fff;
+  --black: #001224;
+  --primary: #dd7200;
+  --primary-hover: #c76700;
+  --primary-light: #f4d3b0;
+  --secondary: #003366;
+  --secondary-hover: #002e5c;
+  --secondary-light: #e6ebf0;
+  --light-bg: #f5f5f6;
+  --red: #eb5757;
+  --input-placeholder: #97a0a9;
+  --spacing: 1rem;
+  --border-radius: 5px;
+  --input-height: 45px;
+  --button-height: 45px;
+  --transition-duration: 0.3s;
+}
+
+/* -------------------------------- CSS reset ------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Niramit", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+input {
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* --------------------------- general form styles -------------------------- */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) / 4);
+  margin-bottom: var(--spacing);
+}
+.form-field--inline {
+  flex-direction: row;
+  margin-bottom: 0;
+}
+
+.form-field__label {
+  font-weight: 500;
+  color: var(--black);
+  font-size: 0.875rem;
+  text-transform: capitalize;
+}
+
+.form-field__input {
+  width: 100%;
+  background-color: var(--secondary-light);
+  border-radius: var(--border-radius);
+  padding: 0 var(--spacing);
+  height: var(--input-height);
+  color: var(--black);
+  box-sizing: border-box;
+  transition-duration: var(--transition-duration);
+}
+
+.form-field__input::placeholder {
+  color: var(--input-placeholder);
+}
+
+.form-field__input:focus {
+  outline: 1px solid var(--secondary) !important;
+  transition-duration: var(--transition-duration);
+}
+
+.form-field__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-form__forgot-password {
+  color: var(--primary);
+}
+
+.login-form__forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------- custom button styles -------------------------- */
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing);
+  height: var(--button-height);
+  background-color: var(--secondary);
+  padding: 0 calc(var(--spacing) * 2);
+  border-radius: var(--border-radius);
+  transition-duration: var(--transition-duration);
+}
+.custom-button:hover {
+  transition-duration: var(--transition-duration);
+}
+
+.custom-button__text {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.custom-button--primary {
+  background-color: var(--primary);
+}
+
+.custom-button--primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.custom-button--full {
+  width: 100%;
+}
