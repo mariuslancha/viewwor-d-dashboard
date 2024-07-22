@@ -1,3 +1,5 @@
+<p ><a href="#" target="_blank"><img src="./assets/images/logo/logo.svg" width="400" alt="VeriWorld Logo"></a></p>
+
 # Veriworld
 
 **Veriworld** is a tool designed to streamline the verification process of documents such as "Certification of Completion of Work" for both individuals and institutions. Our platform simplifies and secures the process of verifying important documents, ensuring authenticity and reducing manual verification efforts.
