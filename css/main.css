@@ -2,8 +2,10 @@
 
 /* -------------------------------- variables ------------------------------- */
 :root {
+  /* colors */
   --white: #fff;
   --black: #001224;
+  --light-text: #4a5253;
   --primary: #dd7200;
   --primary-hover: #c76700;
   --primary-light: #f4d3b0;
@@ -12,12 +14,27 @@
   --secondary-light: #e6ebf0;
   --light-bg: #f5f5f6;
   --red: #eb5757;
+  --red-hover: #d44343;
   --input-placeholder: #97a0a9;
+
+  /* default variables  */
   --spacing: 1rem;
   --border-radius: 5px;
-  --input-height: 45px;
-  --button-height: 45px;
   --transition-duration: 0.3s;
+
+  /* header variables  */
+  --header-height: 50px;
+  --header-action-height: 40px;
+  --header-search-field-width: 250px;
+
+  /* input field variables  */
+  --input-height: 45px;
+
+  /* button variables  */
+  --button-height: 45px;
+
+  /* sidebar variables  */
+  --dashboard-sidebar-width: 250px;
 }
 
 /* -------------------------------- CSS reset ------------------------------- */
@@ -143,15 +160,23 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing);
+  gap: calc(var(--spacing) / 2);
   height: var(--button-height);
   background-color: var(--secondary);
   padding: 0 calc(var(--spacing) * 2);
   border-radius: var(--border-radius);
   transition-duration: var(--transition-duration);
 }
+
 .custom-button:hover {
   transition-duration: var(--transition-duration);
+  background-color: var(--secondary-hover);
+}
+
+.custom-button__icon,
+.custom-button__text {
+  color: var(--white);
+  font-size: 1em;
 }
 
 .custom-button__text {
@@ -159,12 +184,22 @@ ol {
   font-weight: 500;
 }
 
+/* primary button styles  */
 .custom-button--primary {
   background-color: var(--primary);
 }
 
 .custom-button--primary:hover {
   background-color: var(--primary-hover);
+}
+
+/* red button styles  */
+.custom-button--red {
+  background-color: var(--red);
+}
+
+.custom-button--red:hover {
+  background-color: var(--red-hover);
 }
 
 .custom-button--full {

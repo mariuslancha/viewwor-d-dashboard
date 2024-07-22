@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users | Veriworld</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="dashboard">
+        <!-- ------------------------------- Dashboard Sidebar ------------------------------- -->
+        <aside class="dashboard__sidebar">
+          <img
+            src="./assets/images/logo/logo.svg"
+            alt="Veriworld logo"
+            class="dashboard__sidebar__logo"
+          />
+          <nav class="dashboard__sidebar__nav">
+            <ul class="dashboard__sidebar__nav__list">
+              <li>
+                <a href="/" class="sidebar-link" aria-label="Dashboard">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="sidebar-link__text">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/requests.html"
+                  class="sidebar-link"
+                  aria-label="Documents"
+                >
+                  <i class="fa-solid fa-file"></i>
+                  <span class="sidebar-link__text">Documents</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/validation.html"
+                  class="sidebar-link"
+                  aria-label="Documents"
+                >
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <span class="sidebar-link__text"
+                    >Submission verification</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link" aria-label="Documents">
+                  <i class="fa-solid fa-bullseye"></i>
+                  <span class="sidebar-link__text">API Integration</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/users.html"
+                  class="sidebar-link sidebar-link--active"
+                  aria-label="Documents"
+                >
+                  <i class="fa-solid fa-users"></i>
+                  <span class="sidebar-link__text">Users Management</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="dashboard__sidebar__nav__list">
+              <li>
+                <a href="#" class="sidebar-link" aria-label="Dashboard">
+                  <i class="fa-solid fa-headset"></i>
+                  <span class="sidebar-link__text">Support and Help</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sidebar-link" aria-label="Documents">
+                  <i class="fa-solid fa-gear"></i>
+                  <span class="sidebar-link__text">Settings</span>
+                </a>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="custom-button custom-button--red custom-button--full"
+                >
+                  <span class="custom-button__text">Logout</span>
+                  <i
+                    class="fa-solid fa-arrow-right-from-bracket custom-button__icon"
+                  ></i>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- ------------------------------- Dashboard Header ------------------------------- -->
+        <header class="dashboard__header">
+          <div class="header__search">
+            <input
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+              class="header__search__input"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="header__actions">
+            <button class="header__action" aria-label="Notifications">
+              <i class="fa-solid fa-bell"></i>
+            </button>
+            <button class="header__menu" aria-label="User Menu">
+              <img src="./assets/images/user.png" class="header__menu__photo" />
+              <span class="header__menu__text">Ericka Ndi</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+          </div>
+        </header>
+
+        <!-- ----------------------- Dashboard Main Content ------------------------ -->
+        <section class="dashboard__content">
+          <h1>Welcome to your Dashboard</h1>
+          <!-- Add your main content here -->
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
